@@ -1,10 +1,17 @@
-// Firebase Console > Project settings > Your apps > Web app config.
-// This is public web-app config only. NEVER put service-account private keys here.
-export const firebaseConfig = {
-  apiKey: "YOUR_FIREBASE_WEB_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_FIREBASE_APP_ID"
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDoB9ol7JFlol1L7D3_iSToOL7SNiLetgw",
+  authDomain: "vortex-ai-3ee9a.firebaseapp.com",
+  projectId: "vortex-ai-3ee9a",
+  storageBucket: "vortex-ai-3ee9a.firebasestorage.app",
+  messagingSenderId: "309755894107",
+  appId: "1:309755894107:web:dd5b4c6f0d4ee066a9a27e"
 };
+
+const app = initializeApp(firebaseConfig);
+
+export const auth = getAuth(app);
+export const db = getFirestore(app);
