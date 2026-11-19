@@ -1,4 +1,3 @@
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 
 import { getAuth } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
@@ -11,8 +10,7 @@ const firebaseConfig = {
   projectId: "vortex-ai-3ee9a",
   storageBucket: "vortex-ai-3ee9a.firebasestorage.app",
   messagingSenderId: "309755894107",
-  appId: "1:30975524845:web:dd5b4c6f0d4ee066a9a27e"
-};
+  appId: "1:309755894107:web:dd5b4c6f0d4ee066a9a27e"
 
 const app = initializeApp(firebaseConfig);
 
